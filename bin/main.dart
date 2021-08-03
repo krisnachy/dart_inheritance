@@ -12,4 +12,10 @@ main(List<String> args) async {
 
   print("Health point hero : " + h.healthPoint.toString());
   print("Health point monster : " + m.healthPoint.toString());
+
+  if (h.healthPoint > m.healthPoint) {
+    print(h.killMonster());
+  } else {
+    print(m.eatHuman());
+  }
 }
