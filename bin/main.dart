@@ -2,10 +2,12 @@ import 'dart:io';
 
 import 'package:dart_inheritance/hero.dart';
 import 'package:dart_inheritance/monster.dart';
+import 'package:dart_inheritance/monster_kecoa.dart';
 
 main(List<String> args) async {
   Hero h = Hero();
   Monster m = Monster();
+  MonsterKecoa kecoa = MonsterKecoa();
 
   h.healthPoint = 10;
   m.healthPoint = -5;
@@ -15,6 +17,7 @@ main(List<String> args) async {
 
   if (h.healthPoint > m.healthPoint) {
     print(h.killMonster());
+    print(kecoa.terbang());
   } else {
     print(m.eatHuman());
   }
