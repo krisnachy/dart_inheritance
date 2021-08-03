@@ -24,4 +24,12 @@ main(List<String> args) async {
   }
 
   monsters.add(MonsterKecoa());
+
+  print((m as MonsterKecoa).terbang());
+
+  for (Monster mon in monsters) {
+    if (mon is MonsterKecoa) {
+      print(mon.terbang());
+    }
+  }
 }
