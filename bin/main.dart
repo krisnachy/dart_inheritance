@@ -8,6 +8,7 @@ main(List<String> args) async {
   Hero h = Hero();
   Monster m = Monster();
   MonsterKecoa kecoa = MonsterKecoa();
+  List<Monster> monsters = [];
 
   h.healthPoint = 10;
   m.healthPoint = -5;
@@ -21,4 +22,6 @@ main(List<String> args) async {
   } else {
     print(m.eatHuman());
   }
+
+  monsters.add(MonsterKecoa());
 }
