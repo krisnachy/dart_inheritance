@@ -1,7 +1,9 @@
 import 'dart:io';
 
+import 'package:dart_inheritance/flying_monster.dart';
 import 'package:dart_inheritance/hero.dart';
 import 'package:dart_inheritance/monster.dart';
+import 'package:dart_inheritance/monster_hicoa.dart';
 import 'package:dart_inheritance/monster_hiu.dart';
 import 'package:dart_inheritance/monster_kecoa.dart';
 
@@ -26,12 +28,16 @@ main(List<String> args) async {
 
   monsters.add(MonsterKecoa());
   monsters.add(MonsterHiu());
-  monsters.add(MonsterKecoa());
+  monsters.add(MonsterHicoa());
 
   // print((m as MonsterKecoa).terbang());
 
   for (Monster mon in monsters) {
-    print(mon.move());
-    print(mon.eatHuman());
+    // print(mon.move());
+    // print(mon.eatHuman());
+
+    if (mon is FlyingMonster) {
+      print((mon as FlyingMonster).terbang());
+    }
   }
 }
