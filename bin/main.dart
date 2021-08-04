@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:dart_inheritance/attack_ability.dart';
 import 'package:dart_inheritance/flying_monster.dart';
 import 'package:dart_inheritance/hero.dart';
 import 'package:dart_inheritance/monster.dart';
@@ -38,6 +39,10 @@ main(List<String> args) async {
 
     if (mon is FlyingMonster) {
       print((mon as FlyingMonster).terbang());
+    }
+
+    if (mon is AttackAbility) {
+      print((mon as AttackAbility).attack());
     }
   }
 }
