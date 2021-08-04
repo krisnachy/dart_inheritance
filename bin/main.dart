@@ -6,7 +6,7 @@ import 'package:dart_inheritance/monster_kecoa.dart';
 
 main(List<String> args) async {
   Hero h = Hero();
-  Monster m = Monster();
+  Monster m = MonsterKecoa();
   MonsterKecoa kecoa = MonsterKecoa();
   List<Monster> monsters = [];
 
