@@ -32,5 +32,6 @@ main(List<String> args) async {
 
   for (Monster mon in monsters) {
     print(mon.move());
+    print(mon.eatHuman());
   }
 }
